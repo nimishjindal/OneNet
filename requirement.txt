@@ -8,3 +8,4 @@ torch==1.13.1
 wandb
 numexpr==2.8
 torchvision==0.14.1
+debugpy

@@ -10,6 +10,13 @@ import wandb
 #from exp.exp_online import Exp_TS2VecSupervised
 
 
+import debugpy
+
+debugpy.listen(('0.0.0.0', 5678))
+
+print("Waiting for debugger to attach...")
+debugpy.wait_for_client()
+
 def init_dl_program(
         device_name,
         seed=None,
