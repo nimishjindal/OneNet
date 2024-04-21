@@ -15,7 +15,7 @@ import debugpy
 debugpy.listen(('0.0.0.0', 5678))
 
 print("Waiting for debugger to attach...")
-debugpy.wait_for_client()
+#debugpy.wait_for_client()
 
 def init_dl_program(
         device_name,
@@ -214,7 +214,7 @@ data_parser = {
     'Exchange': {'data': 'exchange_rate.csv', 'T':'OT', 'M':[8,8,8]},
     'Illness': {'data': 'national_illness.csv', 'T':'OT', 'M':[7,7,7]},
     'Traffic': {'data': 'traffic.csv', 'T':'OT', 'M':[862,862,862]},
-    'finance': {'data': 'all_companies_concat.csv', 'T':'Target', 'M':[6,6,6],'S':[1,1,1],'MS':[6,6,1]},
+    'finance': {'data': 'transformed/all_companies_concat.csv', 'T':'Target', 'M':[6,6,6],'S':[1,1,1],'MS':[6,6,1]},
 }
 
 if args.data in data_parser.keys():
