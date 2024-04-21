@@ -10,3 +10,4 @@ imgs/*
 *.pdf
 *.out
 *.csv
+!all_companies_concat.csv
