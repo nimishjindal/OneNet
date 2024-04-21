@@ -214,8 +214,9 @@ data_parser = {
     'Exchange': {'data': 'exchange_rate.csv', 'T':'OT', 'M':[8,8,8]},
     'Illness': {'data': 'national_illness.csv', 'T':'OT', 'M':[7,7,7]},
     'Traffic': {'data': 'traffic.csv', 'T':'OT', 'M':[862,862,862]},
-    'finance':{'data':'AAPL.csv','T':'T','M':[12,12,12],'S':[1,1,1],'MS':[12,12,1]},
+    'finance': {'data': 'all_companies_concat.csv', 'T':'Target', 'M':[6,6,6],'S':[1,1,1],'MS':[6,6,1]},
 }
+
 if args.data in data_parser.keys():
     data_info = data_parser[args.data]
     args.data_path = data_info['data']
